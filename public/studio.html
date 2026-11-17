@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invitation Studio</title>
+<link rel="stylesheet" href="assets/css/studio.css">
+<header><a href="index.html">Wedding samples</a><h1>Invitation Studio</h1></header>
+<main>
+<form id="editor">
+<h2>Wedding details</h2>
+<label>Design<select name="design"><option value="kandyan">Kandyan Heritage</option><option value="garden">Garden Romance</option><option value="coastal">Coastal Evening</option></select></label>
+<label>Couple's names<input name="names" value="Amaya &amp; Kavin" required></label>
+<label>Wedding date and time (Sri Lanka)<input type="datetime-local" name="date" value="2027-02-20T10:00" required></label>
+<label>Venue<input name="venue" value="Kandy, Sri Lanka" required></label>
+<label>Welcome message<textarea name="welcome">We warmly invite you to celebrate our marriage with us.</textarea></label>
+<label>Our story<textarea name="story"></textarea></label>
+<label>Ceremony name<input name="ceremony" value="Poruwa Ceremony"></label>
+<label>RSVP deadline<input name="replyBy" value="10 February 2027"></label>
+<label>RSVP WhatsApp number with country code<input name="whatsapp" type="tel" placeholder="94771234567" pattern="[0-9]{8,15}"></label>
+<fieldset id="sections"><legend>Invitation sections</legend></fieldset>
+<label>Guest name<input name="guest" value="Mr &amp; Mrs Perera"></label>
+<button type="submit">Copy guest link</button>
+<a class="action" id="open" target="_blank" rel="noopener">Open invitation</a>
+<p id="status" role="status"></p>
+</form>
+<aside><h2>Live preview</h2><iframe id="preview" title="Wedding invitation preview"></iframe></aside>
+</main>
+<script src="assets/js/studio.js"></script>
+</html>
+

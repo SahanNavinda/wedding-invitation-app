@@ -1,0 +1,8 @@
+:root{color-scheme:light;--wine:#491e2a;--paper:#fbf3e5;--gold:#ae8241}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--wine);font:17px Georgia,serif;text-align:center}
+header,section{padding:4rem 1.5rem}header{min-height:95svh;display:grid;place-items:center;background:var(--wine);color:var(--paper);padding:1rem}
+.cover{border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-8px;width:min(100%,650px);padding:4rem 1.5rem}
+.ornament{color:#c6a36b;font-size:2rem}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.75rem}
+h1{font-size:clamp(3rem,10vw,6rem);font-weight:400;line-height:1;margin:1.5rem 0}h2{font-size:clamp(2rem,6vw,3rem);font-weight:400;margin:.5rem 0 1rem}
+p{line-height:1.6}a{color:inherit}.button{display:inline-block;background:var(--wine);color:var(--paper);padding:.85rem 1.5rem;text-decoration:none;border:1px solid var(--gold);margin-top:.75rem}.cover .button{background:var(--paper);color:var(--wine)}
+section:nth-child(even){background:#f4e7d2}.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}.card{border:1px solid var(--gold);padding:1rem 2rem;min-width:220px}footer{padding:2rem;background:var(--wine);color:var(--paper)}
